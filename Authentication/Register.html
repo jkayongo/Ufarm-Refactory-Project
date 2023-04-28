@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/custom.css">
+    <title>Register/Ufarm</title>
+</head>
+
+<body>
+    <!--navigation bar starts from here-->
+    <div w3-include-html="Includes/navbar.html"></div>
+    <!--navigation bar ends here-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 registerStyle">
+                <div class="card registerCard">
+                    <div class="card-header">
+                        Please Register Farmer Ones From Here!
+                    </div>
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="fn" placeholder="First Name">
+                            <label for="fn">Enter First Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="ln" placeholder="Last Name">
+                            <label for="ln">Enter Last Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="urbanWard" placeholder="ward they represent">
+                            <label for="urbanWard">Enter Ward They Represent</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="uniqueNumber1"
+                                placeholder="Unique F.0 number">
+                            <label for="uniqueNumber1">Create Unique F.0 number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="uniqueNumber2"
+                                placeholder="Confirm Unique F.0 number">
+                            <label for="uniqueNumber2">Confirm Unique F.0 number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="dor" placeholder="date of registration">
+                            <label for="dor">Enter Date Of Registration</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="g">Gender</label>
+                            <div>
+                                <label for="male" class="radio-inline"><input type="radio" name="gender"
+                                        id="male">Male</label>
+                                <label for="female" class="radio-inline"><input type="radio" name="gender"
+                                        id="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 registerStyle">
+                <div class="card registerCard">
+
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="dob" placeholder="date of birth">
+                            <label for="dob">Enter Date Of Birth</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="activities"
+                                placeholder="activities he or she is involved in">
+                            <label for="activities">Activities he or she is involved in</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="nin" placeholder="NIN Number">
+                            <label for="nin">Enter his or her NIN Number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="telephoneNo" placeholder="Telephone Number">
+                            <label for="telephoneNo">Enter his or her Telephone Number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="directions"
+                                placeholder="Direction to his or her home">
+                            <label for="directions">Enter directions to his or her home</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="rt">Residence Type</label>
+                            <div>
+                                <label for="byBirth" class="radio-inline"><input type="radio" name="residence type"
+                                        id="byBirth">By Birth</label>
+                                <label for="byRegistration" class="radio-inline"><input type="radio"
+                                        name="residence type" id="byRegistration">By registration</label>
+                                <label for="others" class="radio-inline"><input type="radio" name="residence type"
+                                        id="others">Others</label>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="period of stay">Period of stay in the ward in years</label>
+                            <div>
+                                <label for="ten" class="radio-inline"><input type="radio" name="years" id="ten">Below 10
+                                </label>
+                                <label for="aboveTen" class="radio-inline"><input type="radio" name="years"
+                                        id="aboveTen">Above ten</label>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <button type="button" class="btn btn-success">Confirm Registration</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 registerStyle">
+                <div class="card registerCard">
+                    Register an urban farmer in your area of administration you as the farmer one.
+                    <div class="card-header">
+                        REGISTER HERE PLEASE!
+                    </div>
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="uFfirstName" placeholder="Enter First Name">
+                            <label for="uFfirstName">Enter First Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="uFlastName" placeholder="Enter Last Name">
+                            <label for="uFlastName">Enter Last Name</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="g">Gender</label>
+                            <div>
+                                <label for="uFmale" class="radio-inline"><input type="radio" name="gender"
+                                        id="uFmale">Male</label>
+                                <label for="uFfemale" class="radio-inline"><input type="radio" name="gender"
+                                        id="UFfemale">Female</label>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="regDate"
+                                placeholder="Enter date of registration">
+                            <label for="regDate">Enter date of registration</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="ufdob" placeholder="Enter date of birth">
+                            <label for="ufdob">Enter date of birth</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="ufactivities"
+                                placeholder="Enter activities undertaken">
+                            <label for="ufactivities">Enter activities undertaken</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="ufemail" placeholder="Enter his or her email">
+                            <label for="ufemail">Enter his or her email.</label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 registerStyle">
+                <div class="card registerCard">
+
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="uftelephone"
+                                placeholder="Enter his or her telephone number">
+                            <label for="uftelephone">Enter his/her telephone number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="ufnin" placeholder="Enter his/her NIN">
+                            <label for="ufnin">Enter his or her NIN</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="ufward" placeholder="Enter ward">
+                            <label for="ufward">Enter ward name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="ufuniqueid" placeholder="Create Unique ID">
+                            <label for="ufuniqueid">Create Unique ID</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="ufuniqueidconfirm"
+                                placeholder="Confirm Unique ID">
+                            <label for="ufuniqueidconfirm">Confirm Unique ID</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <button type="button" class="btn btn-success">Register</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+            <script src="js/custom.js"></script>
+</body>
+
+</html>

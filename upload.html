@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/custom.css">
+  <title>Uploads</title>
+  <style>
+    body {
+      background-image: url('/Images/bckgrdPicture.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 150vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container d-flex justify-content-center">
+    <div class="row">
+      <div class="col-sm-6 uploadstyle">
+        <p>Upload produce here please!</p>
+        <div class="card upload">
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Add image</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="card-body">
+            <hr>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="uploadingfarmername" placeholder="Enter your name">
+              <label for="uploadingfarmername">Enter your name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="yourward" placeholder="Enter your ward">
+              <label for="yourward">Enter your ward</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="date" class="form-control" id="uploadingdate" placeholder="Date">
+              <label for="uploadingdate">Date</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="unitprice" placeholder="Unit price in Ugx">
+              <label for="unitprice">Unit price in Ugx</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="qty" placeholder="Quantity">
+              <label for="qty">Quantity</label>
+            </div>
+            <div class="form-group mb-3">
+              <label for="payments">Mode of payment</label>
+              <div>
+                <label for="cashmode" class="radio-inline"><input type="radio" name="paymentmode"
+                    id="cashmode">Cash</label>
+                <label for="mobilemoneymode" class="radio-inline"><input type="radio" name="paymentmode"
+                    id="mobilemoneymode">Moblie money</label>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="uploaddirections" placeholder="Directions">
+              <label for="uploaddirections">Directions</label>
+            </div>
+            <div class="form-group mb-3">
+              <label for="delivery">Mode of delivery</label>
+              <div>
+                <label for="pickupmode" class="radio-inline"><input type="radio" name="deliverymode"
+                    id="pickupmode">Pickup</label>
+                <label for="homedeliverymode" class="radio-inline"><input type="radio" name="deliverymode"
+                    id="homedeliverymode">Home Delivery</label>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="pdttype">Product type</label>
+              <div>
+                <label for="organictype" class="radio-inline"><input type="radio" name="producttype"
+                    id="organictype">Organic</label>
+                <label for="nonorganictype" class="radio-inline"><input type="radio" name="producttype"
+                    id="nonorganictype">Non-organic</label>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <button type="button" class="btn btn-success">Upload produce</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

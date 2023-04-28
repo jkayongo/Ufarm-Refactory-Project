@@ -1,0 +1,89 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='/CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css')
+  link(rel='stylesheet' href='/CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/custom.css')
+  title farmer one registration
+  style.
+    body {
+    background-image: url('/Images/bckgrdPicture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    }
+.container
+  .row
+    .col-sm-6.registerStyle
+      .card.registerCard
+        | Register an urban farmer in your area of administration you as the farmer one.
+        .card-header
+          | REGISTER HERE PLEASE!
+        .card-body
+          form#foregister(action='#' name='foregistration' onsubmit='return Validate(event);' method='POST')
+            .form-floating.mb-3
+              input#ufName.form-control(type='text' placeholder='Enter Uf Name')
+              label(for='ufName') Enter First Name
+              small#ufNameError
+            .form-floating.mb-3
+              input#ufnin.form-control(type='text' placeholder='Enter his/her NIN')
+              label(for='ufnin') Enter his or her NIN
+              small#ufninError
+            .form-floating.mb-3
+              input#ufdob.form-control(type='date' placeholder='Enter date of birth')
+              label(for='ufdob') Enter date of birth
+              small#ufdobError
+            .form-group.mb-3
+              label(for='g') Gender
+              div
+                label.radio-inline(for='uFmale')
+                  input#uFmale(type='radio' name='gender')
+                  | Male
+                label.radio-inline(for='uFfemale')
+                  input#UFfemale(type='radio' name='gender')
+                  | Female
+              small#ufGenderError
+            .form-floating.mb-3
+              input#uftelephone.form-control(type='tel' placeholder='Enter his or her telephone number')
+              label(for='uftelephone') Enter his/her telephone number
+              small#uftelephoneError
+    .col-sm-6.registerStyle
+      .card.registerCard
+        .card-body
+          form#foregister(action='#' name='foregistration' onsubmit='return Validate(event);' method='POST')
+            .form-floating.mb-3
+              input#ufemail.form-control(type='email' placeholder='Enter his or her email')
+              label(for='ufemail') Enter his or her email.
+              small#ufemailError
+            .form-floating.mb-3
+              .dropdown
+                button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                  | SELECT WARD THEY REPRESENT
+                ul#ufward.dropdown-menu
+                  li
+                    button.dropdown-item(type='button') Urban ward 1
+                  li
+                    button.dropdown-item(type='button') Urban ward 2
+                  li
+                    button.dropdown-item(type='button') Urban ward 3
+                  li
+                    button.dropdown-item(type='button') Urban ward 4
+                small#ufwardError
+            .form-floating.mb-3
+              input#ufactivities.form-control(type='text' placeholder='Enter activities undertaken')
+              label(for='ufactivities') Enter activities undertaken
+              small#ufactivitiesError
+            .form-floating.mb-3
+              input#regDate.form-control(type='date' placeholder='Enter date of registration')
+              label(for='regDate') Enter date of registration
+              small#regDateError
+            .form-floating.mb-3
+              input#ufuniqueid.form-control(type='text' placeholder='Create Unique ID')
+              label(for='ufuniqueid') Create Unique ID
+              small#ufuniqueidError
+            .form-floating.mb-3
+              button.btn.btn-success(type='submit') Register
+    script(src='/CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js')
+    script(src='/js/custom.js')
+    script(src='/validations/foRegistrationValidation.js')

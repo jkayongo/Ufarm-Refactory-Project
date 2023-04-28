@@ -1,0 +1,111 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='/CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css')
+  link(rel='stylesheet' href='/CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/custom.css')
+  title agric officer registration
+  style.
+    body {
+    background-image: url('/Images/bckgrdPicture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    }
+.container
+  .row
+    .col-sm-6.registerStyle
+      .card.registerCard
+        .card-header
+          | Please Register Farmer Ones From Here!
+        .card-body
+          form#aoregister(action='#' name='aoregistration' onsubmit='return Validate(event);' method='POST')
+            .form-floating.mb-3
+              input#fn.form-control(type='text' name="farmerOneName" placeholder="Farmer's name")
+              label(for='fn') Enter F.O name
+              small#fnError
+            .form-floating.mb-3
+              input#nin.form-control(type='text' name="foNin" placeholder='NIN Number')
+              label(for='nin') Enter his or her NIN Number
+              small#ninerror
+            .form-floating.mb-3
+              input#dob.form-control(type='date' name="foDob" placeholder='date of birth')
+              label(for='dob') Enter Date Of Birth
+              small#dobError
+            .form-group.mb-3
+              label(for='g') Gender
+              div
+                label.radio-inline(for='male')
+                  input#male(type='radio' name='gender')
+                  | Male
+                label.radio-inline(for='female')
+                  input#female(type='radio' name='gender')
+                  | Female
+              small#genderError
+            .form-floating.mb-3
+              input#telephoneNo.form-control(type='tel' name="foTel" placeholder='Telephone Number')
+              label(for='telephoneNo') Enter his or her Telephone Number
+              small#telephoneNoError
+            .form-floating.mb-3
+              .dropdown
+                button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                  | SELECT WARD THEY REPRESENT
+                ul#ward.dropdown-menu
+                  li
+                    button.dropdown-item(type='button') Urban ward 1
+                  li
+                    button.dropdown-item(type='button') Urban ward 2
+                  li
+                    button.dropdown-item(type='button') Urban ward 3
+                  li
+                    button.dropdown-item(type='button') Urban ward 4
+                small#wardError
+            .form-group.mb-3
+              label(for='rt') Residence Type
+              div
+                label.radio-inline(for='birth')
+                  input#birth(type='radio' name='residence type')
+                  | By Birth
+                label.radio-inline(for='registration')
+                  input#registration(type='radio' name='residence type')
+                  | By registration
+                label.radio-inline(for='others')
+                  input#others(type='radio' name='residence type')
+                  | Others
+              small#residenceError
+    .col-sm-6.registerStyle
+      .card.registerCard
+        .card-body
+          form#aoregister(action='#' name='aoregistration' onsubmit='return Validate(event);' method='POST')
+            .form-group.mb-3
+              label(for='periodOfStay') Period of stay in the ward in years
+              div
+                label.radio-inline(for='downten')
+                  input#downten(type='radio' name='years')
+                  | Below 10
+                label.radio-inline(for='tenUp')
+                  input#tenUp(type='radio' name='years')
+                  | Above ten
+              small#periodError
+            .form-floating.mb-3
+              input#directions.form-control(type='text' name="foDirections" placeholder='Direction to his or her home')
+              label(for='directions') Enter directions to his or her home
+              small#directionsError
+            .form-floating.mb-3
+              input#activity.form-control(type='text' name="foActivities" placeholder='activities he or she is involved in')
+              label(for='activity') Activities he or she is involved in
+              small#activityError
+            .form-floating.mb-3
+              input#initialUnumber.form-control(type='text' name="foUniqueID" placeholder='Unique F.0 number')
+              label(for='initialUnumber') Create Unique id for the F.O
+              small#unError1
+            .form-floating.mb-3
+              input#dor.form-control(type='date' name="foDor" placeholder='date of registration')
+              label(for='dor') Enter Date Of Registration
+              small#dorError
+            .form-floating.mb-3
+              button.btn.btn-success(type='submit') Confirm Registration
+script(src='/CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js')
+script(src='/js/custom.js')
+script(src='/validations/aoregistrationvalidation.js')

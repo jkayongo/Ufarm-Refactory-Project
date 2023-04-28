@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/custom.css">
+    <title>SignIn</title>
+    <style>
+        body {
+            background-image: url('/Images/bckgrdPicture.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!--navigation bar starts from here-->
+    <div w3-include-html="Includes/navbar.html"></div>
+    <!--navigation bar ends here-->
+
+
+    </div>
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col-6 signIncolor">
+                <div class="dropdown dropdownsignin">
+                    <button type="button" class="btn btn-success dropdown-toggle" id="dropdownsigninsize"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        AGRICULTURAL OFFICER
+                    </button>
+                    <form class="dropdown-menu signinmenu p-4">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="firstAndLastNames" placeholder="">
+                            <label for="firstAndLastNames">Enter first name and last name</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="aOpassword" placeholder="">
+                            <label for="aOpassword">Enter Password</label>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                <label class="form-check-label" for="dropdownCheck2">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success text-align:center">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col-6 signIncolor">
+                <div class="dropdown dropdownsignin">
+                    <button type="button" class="btn btn-success dropdown-toggle" id="dropdownsigninsize"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        FARMER ONE
+                    </button>
+                    <form class="dropdown-menu signinmenu p-4">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="fOname" placeholder="">
+                            <label for="fOname">Enter your name as registered by the A.O</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="fOward" placeholder="">
+                            <label for="fOward">Enter your ward</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="fOpassword" placeholder="">
+                            <label for="aOpassword">Enter password given to you by the A.O</label>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                <label class="form-check-label" for="dropdownCheck2">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col-6 signIncolor">
+                <div class="dropdown dropdownsignin">
+                    <button type="button" class="btn btn-success dropdown-toggle" id="dropdownsigninsize"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        URBAN FARMER
+                    </button>
+                    <form class="dropdown-menu signinmenu p-4">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="uFarmerID" placeholder="">
+                            <label for="uFarmerID">Enter Unique ID given to you by the F.O</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="urbanFarmerName" placeholder="">
+                            <label for="urbanFarmerName">Enter first and last Name</label>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                <label class="form-check-label" for="dropdownCheck2">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="../CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+        <script src="js/custom.js"></script>
+</body>
+
+</html>

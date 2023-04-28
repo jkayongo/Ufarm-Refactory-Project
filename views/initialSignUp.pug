@@ -1,0 +1,56 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='/CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css')
+  link(rel='stylesheet' href='/CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/custom.css')
+  title initial signup
+  style.
+    body {
+    background-image: url('/Images/bckgrdPicture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    }
+.container.d-flex.justify-content-center
+  .row
+    .col-6.initialsignup
+      .card
+        .card-header
+          | SIGNUP NOW
+        .card-body
+          form#initialSignUpForm(action='/Authentication/initialSignUp.html' name='ufInitialSignUp' onsubmit='return Validate(event);' method='POST')
+            .form-floating.mb-3
+              input#yourname.form-control(type='text' placeholder='Enter your name')
+              label(for='yourname') Enter your name
+              small#nameSignUpError
+            .form-floating.mb-3
+              input#initialemail.form-control(type='email' placeholder='Enter your email')
+              label(for='initialemail') Enter your email
+              small#emailError
+            .form-floating.mb-3
+              input#initialpassword.form-control(type='password' placeholder='Enter your password')
+              label(for='initialpassword') Enter your password
+              small#passworderror
+            .form-floating.mb-3
+              input#initialpassword2.form-control(type='password' placeholder='Confirm your password')
+              label(for='initialpassword2') Confirm your password
+              small#confirmPasswordError
+            .form-floating.mb-3
+              .dropdown
+                button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                  | USER
+                ul#userRole.dropdown-menu
+                  li
+                    button.dropdown-item(type='button') AGRICULTURAL OFFICER
+                  li
+                    button.dropdown-item(type='button') FARMER ONE
+                  li
+                    button.dropdown-item(type='button') URBAN FARMER
+                small#userRoleError
+            .form-floating.mb-3
+              button.btn.btn-success(type='submit') SIGNUP NOW
+script(src='/CSS/Bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js')
+script(src='/js/custom.js')
+script(src='/validations/initialSignUpValidation.js')

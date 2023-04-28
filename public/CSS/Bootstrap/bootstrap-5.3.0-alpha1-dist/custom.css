@@ -1,0 +1,229 @@
+ #navigation {
+     font-weight: bold !important;
+     background-color: darkgreen !important;
+ }
+
+ .form-floating {
+     border-color: blue;
+ }
+
+ .cItem {
+     height: 100vh;
+     min-height: 300px;
+ }
+
+ .slideImage {
+     height: 100vh;
+ }
+
+ .captionHeader {
+     font-size: 45px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     margin-top: 25px;
+ }
+
+ .captionParagraph {
+     width: 60%;
+     margin: auto;
+     font-size: 18px;
+     line-height: 1.9;
+ }
+
+ body {
+     background-color: green;
+
+ }
+
+ #carouselBottom {
+     margin-bottom: 150px;
+ }
+
+ .cardServices {
+     height: 120;
+ }
+
+ .card-img-top {
+     height: 300px;
+ }
+
+ #about {
+     margin-bottom: 150px;
+ }
+
+ #services {
+     margin-bottom: 150px;
+ }
+
+ .footer {
+     background-color: black;
+ }
+
+ .upload {
+     width: 30rem;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .registerCard {
+     width: 30rem;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     height: 100;
+ }
+
+ .form-floating {}
+
+ .form-control {}
+
+ .register {}
+
+ .radio-inline {}
+
+ /* #firstAndLastName{
+    margin-bottom: 3;
+} */
+ .btn-success {
+     background-color: green;
+ }
+
+ .signIn {
+     width: 30rem;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     text-align: center;
+
+ }
+
+ .signUp {
+     width: 30rem;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     text-align: center;
+
+ }
+
+ .approval {
+     width: 30rem;
+     margin-top: 10px;
+     margin-bottom: 10px;
+
+ }
+
+ /* .upload {
+     width: 30rem;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ } */
+
+
+ .signIncolor {
+     color: green;
+ }
+
+ .signUpstyle {
+     color: green;
+ }
+
+ .registerStyle {
+     color: green;
+ }
+
+ .approvalstyle {
+     color: green;
+ }
+
+ .uploadstyle {
+     color: green;
+ }
+
+ .dropdownsignin {
+     margin-top: 20px;
+     width: 10rem;
+
+ }
+
+ .signinmenu {
+     width: 30rem;
+     color: green;
+ }
+
+ /* .backgroundimage{
+    background-image: url('/Images/bckgrdPicture.jpg');
+ } */
+ #dropdownsigninsize {
+     width: 18rem;
+ }
+
+ .initialsignin {
+     width: 30rem;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .initialsignup {
+     width: 30rem;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .user {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+     padding-bottom: 60px;
+ }
+
+ .user .content {
+     font-size: 50px;
+     color: white;
+     text-align: center;
+ }
+
+ .user .content h3 {
+     font-size: 30px;
+     color: green;
+ }
+
+ .user .content h3 span {
+     background: green;
+     color: white;
+     border-radius: 5px;
+     padding: 0 15px;
+ }
+
+ .user .content h1 {
+     font-size: 50px;
+     color: green;
+ }
+
+ .user .content h1 span {
+     color: white;
+     background: green;
+ }
+
+ .user .content p {
+     font-size: 25px;
+     margin-bottom: 20px;
+ }
+
+ .user .content .btn {
+     display: inline-block;
+     padding: 10px 30px;
+     font: size 20px;
+     background: green;
+     color: white;
+     margin: 0 5px;
+ }
+
+ .user .content .btn:hover {
+     background: greenyellow;
+ }
+ .aoregister{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30rem;
+    justify-content: center;
+ }
