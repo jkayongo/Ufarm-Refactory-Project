@@ -12,11 +12,31 @@ const aoRegisterSchema = new mongoose.Schema({
         type: String,
         trim:true
     },
+    gender:{
+        type: String,
+        trim:true
+    },
     foTel:{
         type: Number,
         trim: true
     },
+    ward:{
+        type: String,
+        trim:true
+    },
+    residenceType:{
+        type: String,
+        trim: true
+    },
+    years:{
+        type:String,
+        trim: true
+    },
     foDirections:{
+        type: String,
+        trim: true
+    },
+    foActivities:{
         type: String,
         trim: true
     },

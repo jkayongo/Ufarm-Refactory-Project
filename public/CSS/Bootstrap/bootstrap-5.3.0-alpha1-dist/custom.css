@@ -65,12 +65,6 @@
      margin-bottom: 10px;
  }
 
- .registerCard {
-     width: 30rem;
-     margin-top: 10px;
-     margin-bottom: 10px;
-     height: 100;
- }
 
  .form-floating {}
 
@@ -221,9 +215,31 @@
  .user .content .btn:hover {
      background: greenyellow;
  }
- .aoregister{
+ /* .aoregister{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 30rem;
     justify-content: center;
+ } */
+
+ .aoRegistry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 200px;
+
  }
+ .registerCard {
+    width: 30rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100;
+}
+.foRegistry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 200px;
+}

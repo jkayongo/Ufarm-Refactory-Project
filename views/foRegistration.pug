@@ -8,12 +8,12 @@ head
   title farmer one registration
   style.
     body {
-    background-image: url('/Images/bckgrdPicture.jpg');
+    background-image: url('/public/Images/bckgrdPicture.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 150vh;
     }
-.container
+.container.foRegistry
   .row
     .col-sm-6.registerStyle
       .card.registerCard
@@ -48,10 +48,6 @@ head
               input#uftelephone.form-control(type='tel' placeholder='Enter his or her telephone number')
               label(for='uftelephone') Enter his/her telephone number
               small#uftelephoneError
-    .col-sm-6.registerStyle
-      .card.registerCard
-        .card-body
-          form#foregister(action='#' name='foregistration' onsubmit='return Validate(event);' method='POST')
             .form-floating.mb-3
               input#ufemail.form-control(type='email' placeholder='Enter his or her email')
               label(for='ufemail') Enter his or her email.
